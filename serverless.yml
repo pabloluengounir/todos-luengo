@@ -22,6 +22,7 @@ provider:
     - Effect: Allow
       Action:
         - comprehend:DetectDominantLanguage
+      Resource: "*"
     - Effect: Allow
       Action:
         - translate:TranslateText
