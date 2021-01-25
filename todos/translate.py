@@ -19,7 +19,7 @@ def translate(event, context):
     )
     
     scores = client.detect_dominant_language(
-        Text=item
+        Text=item['text']
     )
     
     result = translate.translate_text(Text=item['text'], 
