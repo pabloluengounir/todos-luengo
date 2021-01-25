@@ -22,7 +22,7 @@ def translate(event, context):
         Text=item
     )
     
-    result = translate.translate_text(Text=item, 
+    result = translate.translate_text(Text=item['text'], 
         SourceLanguageCode=scores.Languages[0].LanguageCode, 
         TargetLanguageCode=event['pathParameters']['toLanguage'])
 
